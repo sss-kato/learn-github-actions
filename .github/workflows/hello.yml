@@ -6,11 +6,17 @@ jobs:
     name: Greeting
     runs-on: ubuntu-latest
     steps:
-      - name: Test
-        run: sudo add-apt-repository ppa:longsleep/golang-backports
-      - name: Test2
-        run: sudo apt update
+      # - name: Test
+      #   run: sudo add-apt-repository ppa:longsleep/golang-backports
+      # - name: Test2
+      #   run: sudo apt update
       # - name: Go Download
       #   run: sudo apt install golang-1.18
-      - name: Go Version
-        run: go version
+      # - name: Go Version
+      #   run: go version
+       - name: Setup Go
+        uses: actions/setup-go@v3
+        with:
+          go-version: '1.18.0'
+          cache: true
+          cache-dependency-path: go.sum
