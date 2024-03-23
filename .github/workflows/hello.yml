@@ -10,7 +10,7 @@ jobs:
         run: sudo add-apt-repository ppa:longsleep/golang-backports
       - name: Test2
         run: sudo apt update
-      - name: Go Download
-        run: sudo apt install golang-1.18
+      # - name: Go Download
+      #   run: sudo apt install golang-1.18
       - name: Go Version
         run: go version
