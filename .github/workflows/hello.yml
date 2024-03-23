@@ -7,4 +7,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Test
-        run: echo "Hello test"
+        run: sudo add-apt-repository ppa:longsleep/golang-backports
+      - name: Test2
+        run: apt update
+      - name: Go Download
+        run: sudo apt install golang-1.18
+      - name: Go Version
+        run: go version
