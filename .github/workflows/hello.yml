@@ -20,3 +20,5 @@ jobs:
           go-version: '1.18.0'
           # cache: true
           # cache-dependency-path: go.sum
+      -name: Go Version
+        run: go version
