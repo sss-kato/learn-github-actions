@@ -6,4 +6,4 @@ jobs:
     name: Greeting
     runs-on: ubuntu-latest
     steps:
-    - runs: echo "Hello test"
+      - runs: echo "Hello test"
